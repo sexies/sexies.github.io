@@ -1,43 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="">
-	<meta property="og:image" content="http://i.imgur.com/2if70im.png" />
-	<meta property="og:description" content="Tổng hợp ảnh, video của group VietNam Sexy" />
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" type="text/css">
-	<link rel="stylesheet" href="https://bootstrap-themes.github.io/application/assets/css/toolkit.css">
-	<link rel="stylesheet" href="https://bootstrap-themes.github.io/application/assets/css/application.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.6/css/jquery.fancybox.min.css">
-
-	<title>Vietnamese Sexy Bae Group</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta property="og:image" content="http://i.imgur.com/2if70im.png" />
+    <meta property="og:description" content="Tổng hợp ảnh, video của group VietNam Sexy" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" type="text/css">
+    <link rel="stylesheet" href="https://bootstrap-themes.github.io/application/assets/css/toolkit.css">
+    <link rel="stylesheet" href="https://bootstrap-themes.github.io/application/assets/css/application.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.6/css/jquery.fancybox.min.css">
+    <title>Vietnamese Sexy Bae Group</title>
 </head>
-	<style>
-	.fancybox-title-over-wrap {
-		width: 100%;
-		padding: 0;
-	}
+<style>
+.fancybox-title-over-wrap {
+    width: 100%;
+    padding: 0;
+}
 
-	.fancybox-title-over-wrap > div {
-		padding: 10px;
-	}
-	.fancybox-title a {
-		color: #fff;
-	}
-  </style>
+.fancybox-title-over-wrap > div {
+    padding: 10px;
+}
+
+.fancybox-title a {
+    color: #fff;
+}
+</style>
+
 <body>
-  <div class="bpz" style="background-image: url(https://bootstrap-themes.github.io/application/assets/img/iceland.jpg);">
-		<div class="by">
-			<div class="">
-				<img class="wg bqb" src="http://files.gamebanana.com/img/ico/sprays/53411d41c7d83.png">
-				<h3 class="bqd">Vietnamese Sexy Bae Group</h3>
-				<h2 style="font-size: 25px;color: white;">(Không load được đủ ảnh thì bấm F5 để tải lại dữ liệu)</h2>
-			</div>
-		</div>
- </body>
- </html>
+    <div class="bpz" style="background-image: url(https://bootstrap-themes.github.io/application/assets/img/iceland.jpg);">
+        <div class="by">
+            <div class="">
+                <img class="wg bqb" src="http://files.gamebanana.com/img/ico/sprays/53411d41c7d83.png">
+                <h3 class="bqd">Vietnamese Sexy Bae Group</h3>
+                <h2 style="font-size: 25px;color: white;">(Không load được đủ ảnh thì bấm F5 để tải lại dữ liệu)</h2>
+            </div>
+        </div>
+</body>
+<script src="https://bootstrap-themes.github.io/application/assets/js/jquery.min.js"></script>
+<script src="https://bootstrap-themes.github.io/application/assets/js/tether.min.js"></script>
+<script src="https://bootstrap-themes.github.io/application/assets/js/chart.js"></script>
+<script src="https://bootstrap-themes.github.io/application/assets/js/toolkit.js"></script>
+<script src="https://bootstrap-themes.github.io/application/assets/js/application.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.6/js/jquery.fancybox.min.js"></script>
+<script>
+$(document).ready(function() {
+    $(".fancybox").fancybox({
+        openEffect: 'none',
+        closeEffect: 'none',
+        beforeLoad: function() {
+            var el, id = $(this.element).data('title-id');
+            if (id) {
+                el = $('#' + id);
+
+                if (el.length) {
+                    this.title = el.html();
+                }
+            }
+        },
+        afterShow: function() {
+            $(".fancybox-title").wrapInner('<div />').show();
+
+            $(".fancybox-wrap").hover(function() {
+                $(".fancybox-title").show();
+            }, function() {
+                $(".fancybox-title").hide();
+            });
+        },
+        helpers: {
+            title: {
+                type: '<?php if ($act == '
+                videos ') echo '
+                outside '; else echo '
+                over ' ?>',
+                position: 'bottom'
+            }
+        }
+    });
+});
+</script>
+
+</html>
